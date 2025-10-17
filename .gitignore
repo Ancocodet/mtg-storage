@@ -17,3 +17,8 @@
 ###> JetBrains ###
 /.idea/
 ###< JetBrains ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache/
+###< phpunit/phpunit ###
