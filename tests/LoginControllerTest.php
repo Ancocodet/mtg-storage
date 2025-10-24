@@ -27,7 +27,7 @@ class LoginControllerTest extends WebTestCase
 
         // Create a User fixture
         /** @var UserPasswordHasherInterface $passwordHasher */
-        $passwordHasher = $container->get('security.user_password_hasher');
+        $passwordHasher = $container->get(UserPasswordHasherInterface::class);
 
         $user = (new User())->setEmail('email@example.com');
         $user->setPassword($passwordHasher->hashPassword($user, 'password'));
